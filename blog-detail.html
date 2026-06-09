@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブログ記事 | Sprint Academy AWAKE | 沖縄</title>
+  <meta name="description" content="沖縄のサッカー専門ジュニアスプリントスクールAWAKEの公式ブログ。最新科学と医学視点に基づいたスプリント力向上・走力トレーニング解説。">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Smooth Scroll & Animation Libraries -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Markdown Parsing & Sanitization Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="platform-page">
+
+  <!-- Premium Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">AWAKE</span>
+        <span class="logo-sub">Sprint Academy</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html#about" class="nav-link">コンセプト</a></li>
+          <li><a href="index.html#features" class="nav-link">指導理念</a></li>
+          <li><a href="index.html#trainer" class="nav-link">トレーナー</a></li>
+          <li><a href="index.html#programs" class="nav-link">料金プラン</a></li>
+          <li><a href="platform.html" class="nav-link">無料計測会＆アプリ</a></li>
+          <li><a href="blog.html" class="nav-link active">ブログ</a></li>
+          <li><a href="index.html#contact" class="nav-link btn-nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main style="background: var(--white); padding-top: 100px;">
+    <!-- Article Container -->
+    <article class="blog-detail-container" style="max-width: 800px; margin: 0 auto; padding: 40px 20px 80px;">
+      
+      <!-- Loading State -->
+      <div id="article-loading" class="text-center" style="padding: 100px 0; color: var(--text-light);">
+        <div style="font-size: 1.15rem;">記事を読み込んでいます...</div>
+      </div>
+
+      <!-- Error State -->
+      <div id="article-error" class="text-center" style="display: none; padding: 100px 0;">
+        <i data-lucide="alert-triangle" style="width: 48px; height: 48px; margin: 0 auto 15px; color: var(--accent);"></i>
+        <h2 style="font-size: 1.5rem; margin-bottom: 15px;">記事が見つかりませんでした</h2>
+        <p style="color: var(--text-light); margin-bottom: 25px;">URLが正しくないか、記事が削除された可能性があります。</p>
+        <a href="blog.html" class="btn btn-outline">ブログ一覧に戻る</a>
+      </div>
+
+      <!-- Article Content (Populated dynamically) -->
+      <div id="article-main" style="display: none;">
+        <!-- Breadcrumbs -->
+        <nav class="blog-breadcrumbs" style="font-size: 0.8rem; color: #888888; margin-bottom: 30px;">
+          <a href="index.html" style="color: #888888; text-decoration: none;">ホーム</a> &gt; 
+          <a href="blog.html" style="color: #888888; text-decoration: none;">ブログ</a> &gt; 
+          <span id="breadcrumb-title" style="color: var(--primary); font-weight: 500;">記事</span>
+        </nav>
+
+        <header class="blog-detail-header" style="margin-bottom: 40px;">
+          <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 15px;">
+            <span id="article-category" class="blog-card-cat" style="position: static; display: inline-block;">カテゴリ</span>
+            <span id="article-date" style="font-size: 0.85rem; color: #888888; font-family: var(--font-heading);">2026/06/09</span>
+          </div>
+          <h1 id="article-title" style="font-size: 2.25rem; font-weight: 700; color: var(--primary); line-height: 1.35; margin-bottom: 30px; font-family: var(--font-heading);">記事タイトル</h1>
+          
+          <div id="article-thumb-wrapper" style="width: 100%; max-height: 450px; overflow: hidden; border-radius: 4px; margin-bottom: 40px; border: 1px solid var(--border-color);">
+            <img id="article-thumbnail" src="assets/trainer-analysis.png" alt="アイキャッチ" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </header>
+
+        <!-- Parsed Markdown Injected Here -->
+        <div id="article-content" class="blog-content">
+          <!-- Parsed HTML goes here -->
+        </div>
+
+        <!-- In-Blog CTA Area -->
+        <div class="blog-cta-box" style="margin-top: 60px; padding: 40px; background: var(--bg-light); border-left: 4px solid var(--accent); border-radius: 4px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid var(--border-color); border-left-width: 4px;">
+          <h3 style="font-size: 1.35rem; color: var(--primary); margin-bottom: 12px; font-weight: 700;">まずは「足が速くなる体験」を実感してみませんか？</h3>
+          <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.6; margin-bottom: 25px;">AWAKEでは、高精度センサーを用いた10m走測定と、動画フォーム分析を用いた体験レッスンを随時開催しています。沖縄本島全域での対面指導・オンラインレッスンに対応しています。</p>
+          <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 14px 28px;">体験レッスンを予約する</a>
+            <a href="platform.html" class="btn btn-outline" style="padding: 14px 28px;">無料測定会について見る</a>
+          </div>
+        </div>
+
+        <footer style="margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border-color); text-align: center;">
+          <a href="blog.html" class="btn btn-outline" style="min-width: 200px;">ブログ一覧に戻る</a>
+        </footer>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-main">AWAKE</span>
+        <span class="logo-sub">Sprint Academy</span>
+        <p class="footer-desc">科学の力で、眠っている才能を呼び覚ます。<br>沖縄唯一のサッカー専門ジュニアスプリントアカデミー。</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html#about">コンセプト</a></li>
+          <li><a href="index.html#features">指導理念</a></li>
+          <li><a href="index.html#trainer">トレーナー</a></li>
+          <li><a href="index.html#programs">料金プラン</a></li>
+          <li><a href="platform.html">無料計測会＆アプリ</a></li>
+          <li><a href="blog.html">公式ブログ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Sprint Academy AWAKE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Page Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loadingEl = document.getElementById('article-loading');
+      const errorEl = document.getElementById('article-error');
+      const mainEl = document.getElementById('article-main');
+
+      // Get post ID from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const postId = urlParams.get('id');
+
+      if (!postId) {
+        showError();
+        return;
+      }
+
+      function showError() {
+        loadingEl.style.display = 'none';
+        errorEl.style.display = 'block';
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+      }
+
+      function parseFrontMatter(text) {
+        const match = text.match(/^---\r?\n([\s\S]+?)\r?\n---/);
+        if (!match) return { metadata: {}, body: text };
+        
+        const yaml = match[1];
+        const body = text.slice(match[0].length);
+        const metadata = {};
+        
+        yaml.split(/\r?\n/).forEach(line => {
+          const colonIndex = line.indexOf(':');
+          if (colonIndex > 0) {
+            const key = line.slice(0, colonIndex).trim();
+            let val = line.slice(colonIndex + 1).trim();
+            if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+              val = val.slice(1, -1);
+            }
+            metadata[key] = val;
+          }
+        });
+        return { metadata, body };
+      }
+
+      // Fetch markdown file from posts/ folder
+      fetch(`posts/${postId}.md`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Article file not found');
+          }
+          return response.text();
+        })
+        .then(text => {
+          const { metadata, body } = parseFrontMatter(text);
+
+          if (!metadata.title) {
+            throw new Error('Invalid article format (missing title)');
+          }
+
+          // Update page title & meta description dynamically
+          document.title = `${metadata.title} | AWAKE 公式ブログ`;
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc && metadata.description) {
+            metaDesc.setAttribute('content', metadata.description);
+          }
+
+          // Populate fields
+          document.getElementById('breadcrumb-title').innerText = metadata.title;
+          document.getElementById('article-title').innerText = metadata.title;
+          document.getElementById('article-category').innerText = metadata.category || '未分類';
+          document.getElementById('article-date').innerText = (metadata.date || '').replace(/-/g, '/');
+          
+          const thumbEl = document.getElementById('article-thumbnail');
+          if (metadata.thumbnail) {
+            thumbEl.src = metadata.thumbnail;
+            thumbEl.alt = metadata.title;
+          } else {
+            document.getElementById('article-thumb-wrapper').style.display = 'none';
+          }
+
+          // Parse Markdown to HTML and sanitize
+          const htmlContent = marked.parse(body);
+          const cleanHtml = DOMPurify.sanitize(htmlContent);
+          document.getElementById('article-content').innerHTML = cleanHtml;
+
+          // Reveal main container
+          loadingEl.style.display = 'none';
+          mainEl.style.display = 'block';
+
+          // Trigger dynamic icons reload
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+
+          // GSAP entry animation
+          if (typeof gsap !== 'undefined') {
+            gsap.from('#article-main', {
+              opacity: 0,
+              y: 30,
+              duration: 0.8,
+              ease: 'power3.out'
+            });
+          }
+        })
+        .catch(err => {
+          console.error('Error fetching/parsing article:', err);
+          showError();
+        });
+    });
+  </script>
+</body>
+</html>

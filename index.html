@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprint Academy AWAKE | 沖縄のジュニアサッカー専門スプリントトレーニング（本島全域対面・オンライン対応）</title>
+  <meta name="description" content="沖縄のジュニアサッカー選手向けスプリント専門スクール。本島全域での対面指導（那覇・豊見城・糸満周辺以外は交通費別途）に加え、遠方の方にも推奨されるオンラインでの走り方個別指導を実施。ZONE公認トレーナーによる医学的アプローチ。">
+  
+  <!-- OGP Tags -->
+  <meta property="og:title" content="Sprint Academy AWAKE | サッカー専門ジュニアスプリントトレーニング | 沖縄">
+  <meta property="og:description" content="科学の力で、眠っているスピードを呼び覚ます。医療の視点とZONEメソッドによるスプリント特化型パーソナルトレーニング。">
+  <meta property="og:image" content="assets/hero-bg.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Smooth Scroll & Animation Libraries -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- JSON-LD Structured Data for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Sprint Academy AWAKE",
+    "image": "https://koki41.com/assets/hero-bg.png",
+    "url": "https://koki41.com/",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "沖縄県全域（対面：本島全域・南部周辺以外は交通費別途 / オンライン：全域）",
+      "addressRegion": "沖縄県",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.1833,
+      "longitude": 127.6833
+    },
+    "description": "沖縄本島全域での対面指導（那覇・豊見城・糸満周辺以外は出張交通費別途）および遠方者推奨のオンライン指導に対応する、ジュニアサッカー選手向けスプリント（走力・加速力）専門スクール。ZONE公認トレーナーによる指導。",
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "沖縄県"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "那覇市"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "豊見城市"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "糸満市"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "JPY",
+      "price": "5000",
+      "description": "体験トレーニングレッスン料"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Premium Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-main">AWAKE</span>
+        <span class="logo-sub">Sprint Academy</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">コンセプト</a></li>
+          <li><a href="#features" class="nav-link">指導理念</a></li>
+          <li><a href="#trainer" class="nav-link">トレーナー</a></li>
+          <li><a href="#programs" class="nav-link">料金プラン</a></li>
+          <li><a href="platform.html" class="nav-link">無料計測会＆アプリ</a></li>
+          <li><a href="blog.html" class="nav-link">ブログ</a></li>
+          <li><a href="#contact" class="nav-link btn-nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg" style="background-image: url('assets/hero-bg.png');"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-badge">Medical × Sports Science × Football</span>
+        <h1 class="hero-title">
+          才能を<span class="text-gradient">覚醒</span>させる、<br>
+          科学の走り。
+        </h1>
+        <p class="hero-subtitle">
+          根拠のない指導から、最新科学に基づいたトレーニングへ。<br>
+          沖縄本島全域での対面個別指導（※南部以外は交通費別途。遠方はオンライン推奨）と、手軽に受講できる動画分析オンラインレッスンで「一歩目の劇的変化」を。
+        </p>
+        <div class="hero-actions">
+          <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-primary">体験レッスンを申し込む</a>
+          <a href="#about" class="btn btn-outline">AWAKEについて</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number"><span class="counter" data-target="0.3">0.0</span><span class="stat-unit">s</span></span>
+            <span class="stat-label">
+              平均スプリントタイム短縮
+              <span class="stat-sublabel">※10m走で相手を約1.5m（一歩半）置き去りにする差</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"><span class="counter" data-target="100">0</span><span class="stat-unit">%</span></span>
+            <span class="stat-label">エビデンスに基づく指導</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number"><span class="stat-text">ZONE</span></span>
+            <span class="stat-label">公認トレーニング理論採用</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="grid grid-2-col gap-large items-center">
+          <div class="about-text">
+            <span class="section-badge">About the Academy</span>
+            <h2 class="section-title">
+              <span class="inline-block">本島全域の対面指導</span> ＆ <span class="inline-block">オンライン数値化。</span><br>
+              <span class="inline-block">動画分析でサッカーの</span><span class="inline-block">パフォーマンスを最大化。</span>
+            </h2>
+            <div class="about-description">
+              <p style="color: var(--accent); font-weight: 500; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;"><i data-lucide="info" style="width: 15px; height: 15px; flex-shrink: 0;"></i>※ 那覇・豊見城・糸満周辺以外の地域は、別途出張交通費を頂戴いたします（遠方はオンライン推奨）。</p>
+              <p>感覚に頼るのではなく、すべて数値で現在の能力と「伸びしろ」を測定します。高精度なセンサーやカメラを使い、10m・20mといったスプリントの初速やアジリティのタイムを100分の1秒単位で正確に計測します。<strong>（※10m走における「0.1秒〜0.3秒」の短縮は、ピッチ上では相手を「約50cm〜1.5m（約1〜2歩分）」置き去りにし、ルーズボールを確実にマイボールにする決定的なスピード差に相当します）</strong></p>
+              <p>測定データに基づき、選手一人ひとりに専属のトレーナーがつく完全個別指導を行います。ジュニア年代であれば発達段階・成長期のステージ（PHV：ピーク成長速度の前・最中・後など）に合わせて完全にパーソナライズされたメニューを消化できます。</p>
+              <p>さらに、高めた身体能力をダイレクトに競技へ落とし込むため、サッカー特有のステップワークを取り入れるなどの実践的な指導を行います。</p>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="image-wrapper">
+              <img src="assets/trainer-analysis.png" alt="沖縄のジュニアサッカー選手のスプリント動作を対面・オンラインで動画分析・数値化する様子" class="about-img">
+              <div class="visual-decor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="section bg-dark text-white pillars" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge badge-accent">Core Pillars</span>
+          <h2 class="section-title text-white">AWAKEの指導が<br>論理的である3つの理由</h2>
+        </div>
+
+        <div class="grid grid-3-col gap-medium">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-num">01</div>
+            <h3 class="pillar-title">サッカーに特化した走り</h3>
+            <p class="pillar-desc">「足が遅い」のは、才能のせいではありません。子供たちが走るのを苦手だと感じてしまう原因の多くは、単に身体の使い方や、地面へ力を伝える方向がズレているだけです。当スクールでは、足の着地角度、体幹の適切な傾きなどを精密に分析。感覚だけに頼らない「力学的に速く走るメカニズム」を、子供たちの身体にしっかりと定着させます。</p>
+          </div>
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-num">02</div>
+            <h3 class="pillar-title">身体分析</h3>
+            <p class="pillar-desc">怪我を防ぎつつ、最も効率よく推進力を生み出す関節可動域や筋肉の使い方を確かなエビデンスをもとに緻密に見極めることができます。</p>
+          </div>
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-num">03</div>
+            <h3 class="pillar-title">ZONE公認メソッドの融合</h3>
+            <p class="pillar-desc">プロサッカー選手の指導実績を誇る「ZONE Soccer Performance GYM」の公認トレーナーとして、その最先端のトレーニング理論を沖縄に移植。ジュニア世代の地域格差を解消します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits" id="benefits">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Benefits</span>
+          <h2 class="section-title">入会によって得られるメリット</h2>
+          <p class="section-desc">指導時間内だけのトレーニングにとどまらず、多角的なサポート体制でお子様の成長を継続的に後押しします。</p>
+        </div>
+        <div class="grid grid-3-col gap-medium">
+          <!-- Benefit 1 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="video" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 01</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">個別のスプリント動画分析</h3>
+              <p class="plan-description" style="margin-bottom: 0;">トレーニング中やお子様の実戦の走り方を撮影し、関節の角度や重心移動などをコマ送りで視覚的にフィードバック。直すべき癖と改善点を明確にします。</p>
+            </div>
+          </div>
+          <!-- Benefit 2 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="clipboard-list" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 02</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">個別の宿題メニュー作成</h3>
+              <p class="plan-description" style="margin-bottom: 0;">レッスンでの学びをチーム練習や日常に定着させるため、一人ひとりの課題に合わせた個別の自主トレメニュー（宿題）を設計・提供します。</p>
+            </div>
+          </div>
+          <!-- Benefit 3 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="message-square" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 03</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">24時間個別オンラインサポート</h3>
+              <p class="plan-description" style="margin-bottom: 0;">LINEを活用し、レッスン外の日もサポート。自宅でのセルフケアや自重トレーニングメニューの作成・管理を行います。試合や自主練の動画を送信いただくことで、動きの癖や改善点のフィードバックも受けられます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Section -->
+    <section class="section bg-dark text-white value-section" id="value">
+      <div class="container">
+        <div class="grid grid-2-col gap-large items-center">
+          <div class="value-text">
+            <span class="section-badge badge-accent">Future</span>
+            <h2 class="section-title text-white">AWAKEで得られる未来</h2>
+            
+            <ul class="value-list" style="list-style: none; margin-top: 32px; display: flex; flex-direction: column; gap: 24px;">
+              <li style="border-left: 2px solid var(--accent); padding-left: 20px;">
+                <h4 style="color: var(--white); font-size: 1.15rem; margin-bottom: 8px;">◆ 球技特有の「キレとスピード」の覚醒</h4>
+                <p style="color: #BBBBBB; font-size: 0.9rem;">直線スプリントの速さだけでなく、サッカーやバスケに最も重要な「急減速から180度反転、そして再加速」といった、激しい局面変化に対応するアジリティ能力が劇的に向上します。</p>
+              </li>
+              <li style="border-left: 2px solid var(--accent); padding-left: 20px;">
+                <h4 style="color: var(--white); font-size: 1.15rem; margin-bottom: 8px;">◆ 怪我をしにくい身体の使い方</h4>
+                <p style="color: #BBBBBB; font-size: 0.9rem;">正しいステップワークや減速時の足のつき方を、神経系のアプローチによって身体に染み込ませます。これにより、筋肉系のトラブルや怪我による戦線離脱リスクを大幅に軽減します。</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about-visual">
+            <div class="image-wrapper" style="border: 1px solid var(--border-dark);">
+              <div class="hero-bg" style="background-image: url('assets/hero-bg.png'); height: 350px; position: relative; filter: grayscale(100%) contrast(1.2);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainer Section -->
+    <section class="section trainer" id="trainer">
+      <div class="container">
+        <div class="grid grid-2-col gap-large items-center">
+          <div class="trainer-visual">
+            <div class="image-wrapper trainer-image-wrapper">
+              <img src="assets/trainer.jpg" alt="沖縄唯一のZONE公認トレーナー KAZU（琉球大学医学研究科修了・スプリントコーチ）" class="trainer-img">
+              <div class="visual-decor"></div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="section-badge">The Coach</span>
+            <h2 class="trainer-name">KAZU</h2>
+            <span class="trainer-role">サッカー専門スプリントパーソナルトレーナー</span>
+            
+            <div class="trainer-content">
+              <p class="lead">医療従事者としての豊富な専門知識と臨床経験に基づき、ジュニア選手一人ひとりの身体構造や動作の癖を細かく見極め、パフォーマンス向上と怪我予防を全力でサポートします。</p>
+              
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>トレーナーを志した原点（わが子のサッカー）</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>自分の子供がサッカーを始めた時、親としてサポートできる限界を感じました。私は元プロ選手ではないため、ドリブルの細かな技術や戦術の指導はできません。しかし、「本業の医療知識（骨・筋肉の構造、精密データの分析）を応用すれば、サッカーに不可欠なスプリント動作を科学的に改善できる」と気づいたのです。これがすべての始まりでした。</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>「なんとなく」の指導で大切な成長期を無駄にしない</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>子供たちの限られたゴールデンエイジにおいて、「気合いで走れ」といった感覚的な指導で貴重な時間と身体を無駄にさせてはいけません。だからこそ、国内最高峰の指導実績を持つ「ZONE Soccer Performance GYM」のメソッドを徹底的に修得し、理論に基づいた完全マンツーマンの指導を提供しています。</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>経歴・最終学歴・公認資格</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      <strong>【最終学歴】</strong><br>
+                      琉球大学医学部医学研究科修士課程 修了<br><br>
+                      <strong>【公認資格】</strong><br>
+                      ・ZONE Soccer Performance GYM 公認トレーナー<br>
+                      ・JFA公認4級審判員
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="section bg-light programs" id="programs">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Programs & pricing</span>
+          <h2 class="section-title">プラン・料金のご案内</h2>
+          <p class="section-desc">一人ひとりの目的や目標期間に合わせて選べる、明確で安心な料金プランです。</p>
+        </div>
+        <div class="grid grid-3-col gap-medium pricing-grid">
+          <!-- Plan 1 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="pricing-icon-wrapper">
+                <i data-lucide="sparkles" class="pricing-icon"></i>
+              </div>
+              <span class="plan-badge">Trial Session</span>
+              <h3 class="plan-title">体験トレーニング</h3>
+              <p class="plan-price">¥5,000<span class="plan-unit"> / 60分</span></p>
+              <p class="plan-description">現状の走り方の課題を映像で分析し、その場でスピードの変化を実感していただくための初回レッスン。</p>
+              <ul class="plan-features">
+                <li><i data-lucide="check"></i> 簡易スプリントフォーム動画分析</li>
+                <li><i data-lucide="check"></i> スピードアップの基本動作指導</li>
+                <li><i data-lucide="check"></i> 自宅でできる自主トレの提案</li>
+              </ul>
+              <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">体験を予約する</a>
+            </div>
+          </div>
+
+          <!-- Plan 2 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="pricing-icon-wrapper">
+                <i data-lucide="ticket" class="pricing-icon"></i>
+              </div>
+              <span class="plan-badge badge-accent">Recommended</span>
+              <h3 class="plan-title">8チケット</h3>
+              <p class="plan-price">¥79,200<span class="plan-unit"> / 60分×8回</span></p>
+              <p class="plan-description">まずは約2ヶ月でしっかりと走りの基盤を作り上げ、効果と成長を実感していただくための基本チケットプラン。</p>
+              <ul class="plan-features">
+                <li><i data-lucide="check"></i> 1回あたり ¥9,900</li>
+                <li><i data-lucide="check"></i> 医療視点に基づいた精密姿勢・動作分析</li>
+                <li><i data-lucide="check"></i> 個別自主トレ宿題メニュー作成</li>
+                <li><i data-lucide="check"></i> LINEでの24時間オンラインサポート</li>
+              </ul>
+              <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">体験・入会を申し込む</a>
+            </div>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="pricing-icon-wrapper">
+                <i data-lucide="layers" class="pricing-icon"></i>
+              </div>
+              <span class="plan-badge">Standard Session</span>
+              <h3 class="plan-title">16チケット</h3>
+              <p class="plan-price">¥149,600<span class="plan-unit"> / 60分×16回</span></p>
+              <p class="plan-description">身体の使い方からステップワーク、アジリティの落とし込みまでを長期的に定着させ、圧倒的なアドバンテージを得るプラン。</p>
+              <ul class="plan-features">
+                <li><i data-lucide="check"></i> 1回あたり ¥9,350 (最もお得)</li>
+                <li><i data-lucide="check"></i> 医療視点に基づいた精密姿勢・動作分析</li>
+                <li><i data-lucide="check"></i> 個別自主トレ宿題メニュー作成</li>
+                <li><i data-lucide="check"></i> LINEでの24時間オンラインサポート</li>
+              </ul>
+              <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">体験・入会を申し込む</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+          <p style="font-size: 0.85rem; color: var(--text-light);">※ 入会金は通常 ¥30,000 です。</p>
+          <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">※ チケットプラン終了後、ご希望の方向けに月額制プラン（月1〜4回）のご案内も行っております。</p>
+          <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">※ 対面レッスンは沖縄本島全域に対応いたします。ただし那覇市・豊見城市・糸満市（南部・島尻地区）以外の地域は別途出張交通費（実費目安）を頂戴いたします。遠方のお客さまには、時間効率に優れ、同様の劇的な走力向上を狙える<strong>オンラインレッスンプログラム</strong>を強く推奨しております。</p>
+        </div>
+      </div>
+    </section>
+
+        <!-- Flow Section (体験レッスンの流れ) -->
+    <section class="section flow-section" id="flow">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">How It Works</span>
+          <h2 class="section-title">体験レッスン・ご入会までの流れ</h2>
+          <p class="section-desc">お問い合わせから本契約まで、どなたでも安心して一歩を踏み出せるシンプルな4ステップです。</p>
+        </div>
+
+        <div class="flow-container">
+          <!-- Step 1 -->
+          <div class="flow-step">
+            <div class="flow-num">01</div>
+            <h3 class="flow-step-title">お問い合わせ</h3>
+            <p class="flow-step-desc">LINEまたはGoogleフォームからお気軽にご連絡ください。疑問点などのご相談だけでも歓迎です。</p>
+          </div>
+
+          <div class="flow-arrow">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flow-step">
+            <div class="flow-num">02</div>
+            <h3 class="flow-step-title">日程調整</h3>
+            <p class="flow-step-desc">担当トレーナーより折り返しご連絡し、体験レッスンの日時と実施場所（運動公園など）を決定します。</p>
+          </div>
+
+          <div class="flow-arrow">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <h3 class="flow-step-title">体験レッスン</h3>
+            <p class="flow-step-desc">60分の個別指導を実施。高精度測定とフォームの動画分析をその場で体験し、課題を明確にします。</p>
+          </div>
+
+          <div class="flow-arrow">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flow-step">
+            <div class="flow-num">04</div>
+            <h3 class="flow-step-title">本契約・ご入会</h3>
+            <p class="flow-step-desc">レッスン結果をもとに目標プランをご提案。内容にご納得いただけた場合のみご入会手続きを行います。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq-section">
+      <div class="container max-width-md">
+        <div class="section-header text-center">
+          <span class="section-badge">FAQ</span>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Q. 運動があまり得意でない・足がかなり遅い子でも大丈夫ですか？</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>はい、問題ありません。お子様の現在の状況や体力に合わせて、基本的な身体の使い方から丁寧に指導いたしますのでご安心ください。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Q. 対象年齢は何歳からですか？</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>主に小学1年生から中学生に指導を行っております。その他の年代につきましては、個別にお問い合わせ・ご相談ください。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Q. 練習場所はどこになりますか？</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>主に沖縄県南部エリアの公園や多目的広場、施設等を利用して行います。具体的な場所につきましては、お申し込み後に調整させていただきます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Q. 雨天の場合はどうなりますか？</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>雨天時やグラウンドの状態が良くない場合は、安全を最優先とし、日程の延期や振替などで対応させていただいております。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-light contact" id="contact">
+      <div class="container max-width-md">
+        <div class="section-header text-center">
+          <span class="section-badge">Contact Us</span>
+          <h2 class="section-title">体験のお申し込み・お問い合わせ</h2>
+          <p class="section-desc">体験レッスンのご予約は以下のGoogleフォームより承っております。お問い合わせは公式LINEまたはInstagramのDMよりお気軽にご連絡ください。</p>
+        </div>
+
+        <div class="sns-container">
+          <a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer" class="sns-link line">
+            <i data-lucide="message-square"></i>
+            <span class="text">LINE公式アカウントで問い合わせる</span>
+          </a>
+          <a href="https://www.instagram.com/sprint_academy_awake_okinawa/" target="_blank" rel="noopener noreferrer" class="sns-link instagram">
+            <i data-lucide="instagram"></i>
+            <span class="text">Instagram DMで問い合わせる</span>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 20px 50px;">Googleフォームから体験を申し込む</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-main">AWAKE</span>
+        <span class="logo-sub">Sprint Academy</span>
+        <p class="footer-desc">科学の力で、眠っている才能を呼び覚ます。<br>沖縄唯一のサッカー専門ジュニアスプリントアカデミー。</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#about">コンセプト</a></li>
+          <li><a href="#features">指導理念</a></li>
+          <li><a href="#trainer">トレーナー</a></li>
+          <li><a href="#programs">料金プラン</a></li>
+          <li><a href="platform.html">無料計測会＆アプリ</a></li>
+          <li><a href="blog.html">公式ブログ</a></li>
+          <li><a href="https://note.com/awake_okinawa" target="_blank" rel="noopener noreferrer">note公式</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Sprint Academy AWAKE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

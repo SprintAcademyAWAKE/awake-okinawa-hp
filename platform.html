@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沖縄ジュニアスプリント無料計測会＆PHV予測 | AWAKE（本島全域対面・オンライン対応）</title>
+  <meta name="description" content="沖縄県内のすべての子供たちに科学的測定を。月1回完全無料のスプリント測定会を開催（那覇・豊見城・糸満など）。サッカーや野球、陸上の走力強化、本島全域の対面指導（遠方交通費別途）や推奨のオンライン指導も実施中。">
+  
+  <!-- OGP Tags -->
+  <meta property="og:title" content="沖縄ジュニアスプリント計測会＆データ管理プラットフォーム | AWAKE">
+  <meta property="og:description" content="感覚の指導から、最先端 of データ指導へ。月1回完全無料のスプリント測定会と、気候補正・F-Vプロファイル・成長予測を備えたクラウド管理プラットフォーム。">
+  <meta property="og:image" content="assets/trainer-analysis.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Smooth Scroll & Animation Libraries -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- JSON-LD Structured Data for Local Event / Project SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": "沖縄ジュニアスプリント無料計測会（那覇・豊見城・糸満開催）",
+    "description": "那覇市・豊見城市・糸満市など島尻地区の子供たちに向けた、月1回完全無料のスプリント測定会＆PHV成長スパート期予測。サッカー、野球、陸上、バスケ等の走力強化や運動が苦手な子の『可能性を知るチャンス』を提供します。",
+    "image": "https://koki41.com/assets/children-smiling-run.png",
+    "startDate": "2026-06-21T16:30:00+09:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "沖縄県南部エリア多目的運動広場（豊見城・糸満など島尻地区）",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "豊見城市・糸満市・那覇市",
+        "addressRegion": "沖縄県",
+        "addressCountry": "JP"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-06-09T00:00:00+09:00"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Sprint Academy AWAKE",
+      "url": "https://koki41.com/"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="platform-page">
+
+  <!-- Premium Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">AWAKE</span>
+        <span class="logo-sub">Sprint Academy</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#activities" class="nav-link">活動紹介</a></li>
+          <li><a href="#measurement" class="nav-link">無料計測会</a></li>
+          <li><a href="#schedule" class="nav-link">スケジュール</a></li>
+          <li><a href="#sponsor" class="nav-link">スポンサー</a></li>
+          <li><a href="#sponsor-list" class="nav-link">スポンサー一覧</a></li>
+          <li><a href="blog.html" class="nav-link">ブログ</a></li>
+          <li><a href="#contact" class="nav-link btn-nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (White theme) -->
+    <section class="hero platform-hero bright-hero">
+      <div class="hero-bg" style="background-image: url('assets/hero-bg.png');"></div>
+      <div class="hero-overlay bright-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-badge text-gold">Regional Project × Data Science</span>
+        <h1 class="hero-title dark-text">
+          走る喜びが、いつか大きな自信に変わる。<br>
+          どの子にも、未来をひらく<span class="text-gradient">「スタートライン」</span>を。
+        </h1>
+        <p class="hero-subtitle dark-text">
+          生まれ育った環境やご家庭の状況に関わらず、子どもたちの夢を応援したい。<br>
+          那覇・豊見城・糸満などで対面スプリント測定会（月1回完全無料）を開催し、オンラインレッスンで沖縄全域の子供たちの走りをサポート。
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">月1回の無料計測会に申し込む</a>
+          <a href="#activities" class="btn btn-outline">私たちの理念</a>
+        </div>
+
+        <div class="hero-stats platform-stats dark-stats">
+          <div class="stat-item">
+            <span class="stat-number">¥0</span>
+            <span class="stat-label">月1回 計測会参加費</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1/100<span class="stat-unit">秒</span></span>
+            <span class="stat-label">光電管精密測定</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4<span class="stat-unit">特典</span></span>
+            <span class="stat-label">走力＆成長スパート予測</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 活動紹介: 理念セクション (理念) -->
+    <section class="section mission-section" id="activities">
+      <div class="container">
+        <div class="grid grid-2-col gap-large items-center">
+          <div class="mission-text">
+            <span class="section-badge">Our Mission</span>
+            <h2 class="section-title">
+              どんな子どもたちにも、<br>
+              自分の「可能性」を知る<span style="display: inline-block;">チャンスを。</span>
+            </h2>
+            <div class="mission-description">
+              <div class="accordion" style="margin-top: 32px;">
+                
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>1. がんばる「わが子の成果」が見えない不安に</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>「うちの子、がんばっているけれど本当に足が速くなっているのかな…？」そう思うのは、毎日お子さんを一番近くで支え、応援しているからこそ。しかし、パッと見だけで子どもの成果や客観的な成長に気づいてあげるのは難しいものです。</p>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>2. 一生に一度の「成長の黄金期（PHV）」を予測</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>そこでAWAKEの測定会では、走りの数値化と同時に「PHV（成長スパート期）予測」も行っています。PHVとは、一生の中で最も身長が伸び、運動能力が劇的に伸びる「成長の黄金期」のこと。この時期を事前に知ることで、「今ベストな練習メニュー」や「ケガを防ぐための対策」が分かり、これからのスポーツ生活に大きな安心につながります。</p>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>3. すべての子にチャンスを【月1回・完全無料】</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>「データで応援してあげたいけれど、高額な専門測定には手が出しにくい…」そんな保護者さまのリアルな想いや、ご家庭状況に関わらず、沖縄のすべての子どもたちにチャンスを届けたい。その強い想いから、私たちはこの測定会を【月1回、完全無料】で開催しています。</p>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                  <button class="accordion-trigger">
+                    <span>4. 他チームに所属していても歓迎！「成長の答え合わせ」に</span>
+                    <i data-lucide="plus"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <p>今通っているチームやスクールの「成果の答え合わせ」や、わが子の「一番伸びる時期を知るお守り」として、他のチームに通っていても大歓迎です。どうぞ安心してお気軽に、わが子の今と未来の成長を一緒に確かめに来てください！</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="mission-visual">
+            <div class="image-wrapper quote-image-wrapper">
+              <img src="assets/children-smiling-run.png" alt="スプリント測定会とオンラインレッスンで笑顔で走る沖縄の子供たち（陸上・サッカー・その他スポーツ）" class="about-img mission-img">
+              <div class="visual-decor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 無料計測会: アプリ機能・測定メリット紹介 (White background) -->
+    <section class="section features-section" id="measurement">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Platform & Science</span>
+          <h2 class="section-title">無料で計測できる4つの特典</h2>
+          <p class="section-desc">ただ測定するだけで終わらず、お子さまの成長や走りをデータとして提供します</p>
+        </div>
+
+        <div class="grid grid-3-col gap-medium feature-grid">
+          <!-- Feature 1 -->
+          <div class="pricing-card feature-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="zap" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 01</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">10m スプリント測定</h3>
+              <p class="plan-description" style="margin-bottom: 0;">一歩目の爆発的な加速力（初速）を測定。ここでの「0.1〜0.3秒」の短縮は、試合中に相手を「約50cm〜1.5m（1〜2歩分）」置き去りにすることと同義です。</p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="pricing-card feature-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="gauge" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 02</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">30m スプリント測定</h3>
+              <p class="plan-description" style="margin-bottom: 0;">最高速度（トップスピード）を測定。スピードを維持するフォームや、効率的な腕の振りを分析します。</p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="pricing-card feature-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="arrow-left-right" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 03</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">プロアジリティテスト</h3>
+              <p class="plan-description" style="margin-bottom: 0;">左右への急減速と切り返しスピードを測定。俊敏性やステップの癖、左右のバランスを可視化します。</p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="pricing-card feature-card">
+            <div class="card-inner">
+              <div class="benefit-icon-wrapper">
+                <i data-lucide="ruler" class="benefit-icon"></i>
+              </div>
+              <span class="plan-badge">Benefit 04</span>
+              <h3 class="plan-title" style="font-family: var(--font-heading); font-size: 1.25rem;">PHV・身長予測</h3>
+              <p class="plan-description" style="margin-bottom: 0;">現在の成長段階や将来の予測身長を算出。最も足が速くなる時期を見極め、ケガを防ぐ目安にします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- スケジュール: 開催スケジュール (koki41.comカレンダー・カード風レイアウト) -->
+    <section class="section schedule-section" id="schedule">
+      <div class="container" style="max-width: 960px;">
+        <div class="section-header text-center">
+          <span class="section-badge">Schedule</span>
+          <h2 class="section-title">開催スケジュール</h2>
+          <p class="section-desc">月1回、沖縄本島内各地で開催しています。詳しい日程や空き状況は以下のGoogleカレンダーよりご確認ください。</p>
+        </div>
+
+        <!-- Google Calendar Responsive Wrapper -->
+        <div class="google-cal-wrapper">
+          <!-- 💡 ご自身のGoogleカレンダーを反映する場合：
+               以下の src="〜" 内の 'src=ja.japanese%23holiday%40group.v.calendar.google.com' 部分を、
+               ご自身のカレンダーID（例: info@example.com や カレンダー設定の統合ID）に置き換えてください。 -->
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;src=ja.japanese%23holiday%40group.v.calendar.google.com" style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div class="schedule-note" style="margin-top: 40px; text-align: center;">
+          <p style="font-size: 14px; color: var(--text-light); line-height: 1.8;">
+            ※ 安全確保と精密測定のため【先着15名限定】となります。<br>
+            ※ 雨天時やグラウンド状況の悪化時は安全第一とし、順延等の調整を行います。<br>
+            最新の空き状況やお申し込み順の枠確保は、公式LINEにてリアルタイムで受付・配信しております。
+          </p>
+          <div style="margin-top: 30px;">
+            <a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer" class="btn btn-primary">公式LINEから申し込む</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- スポンサー: スポンサー募集・メリット・協賛プラン (koki41.com風レイアウト) -->
+    <section class="section sponsor-section" id="sponsor">
+      <div class="container">
+        
+        <!-- Merit Section (koki41.com: スポンサーになるメリット) -->
+        <div class="merit-header-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-bottom:52px;">
+          <div>
+            <span class="section-badge">WHY SPONSOR</span>
+            <h2 class="section-title" style="margin-top:8px;">スポンサーになるメリット</h2>
+          </div>
+          <p style="font-size:15px; color:var(--text-light); line-height:1.85;">
+            単なる寄付ではなく、貴社のブランドを地域・社会へ届ける機会です。<br>
+            沖縄の子どもたちと一緒に、未来のスポーツDXを共創していきましょう。
+          </p>
+        </div>
+
+                <div class="merit-grid" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; margin-bottom:80px;">
+          <div class="merit-card">
+            <div class="merit-icon">
+              <i data-lucide="globe"></i>
+            </div>
+            <h3>SNS・HPでの露出</h3>
+            <p>AWAKEの公式SNSや公式サイトにて、協賛企業・パートナーとしてロゴやご紹介を掲載いたします。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">
+              <i data-lucide="tag"></i>
+            </div>
+            <h3>ビブスへのロゴ掲載</h3>
+            <p>毎月開催される無料測定会で着用するスタッフ用ビブスにロゴを掲載。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>CSR・社会貢献のアピール</h3>
+            <p>沖縄のスポーツDX振興と、子どもの育成環境における経済格差解消を支援する企業としての信頼やCSR価値が向上。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">
+              <i data-lucide="file-text"></i>
+            </div>
+            <h3>年間活動報告書の送付</h3>
+            <p>プロジェクトの活動実績をまとめたレポートを年1回報告。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <h3>地域貢献・ローカルブランディング</h3>
+            <p>沖縄県全域の青少年をターゲットとした、地元密着のブランドイメージに直結します。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">
+              <i data-lucide="smile"></i>
+            </div>
+            <h3>柔軟な協賛プラン相談</h3>
+            <p>ご予算に応じた柔軟なプラン変更や、個別のご要望（特別な協力形態など）にも対応可能です。どうぞお気軽にお問い合わせください。</p>
+          </div>
+        </div>
+
+        <!-- Plan Section (協賛プランのご案内資料) -->
+        <div class="section-header text-center" style="margin-top: 60px;">
+          <span class="section-badge">SUPPORT US</span>
+          <h2 class="section-title">協賛・パートナー募集について</h2>
+          <p class="section-desc">沖縄の子どもたちのための無料スプリント測定会を継続して維持・発展させるため、企業・個人パートナー様の協賛を募集しております。</p>
+        </div>
+
+        <div class="sponsor-plans-request" style="max-width: 760px; margin: 40px auto 0; padding: 48px 40px; border: 1px solid var(--border-color); border-radius: 12px; text-align: center; background: var(--white); box-shadow: 0 8px 30px rgba(0,0,0,0.02);">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 16px;">協賛プランのご案内資料について</h3>
+          <p style="font-size: 14px; color: var(--text-light); line-height: 1.85; margin-bottom: 32px;">
+            一口からの個人協賛プラン、または企業様のブランド露出やCSR活動に合わせた複数の協賛プランをご用意しております。<br>
+            詳細な金額や特典を記載した「協賛プランご案内資料（PDF）」をご用意しておりますので、以下よりお気軽にお問い合わせ・ご請求ください。
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer" class="btn btn-primary">LINEで資料を請求する</a>
+            <a href="#contact" class="btn btn-outline">フォームからお問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- スポンサー一覧: スポンサー一覧 (koki41.com: プラチナ/ゴールド/シルバー分類) -->
+    <section class="section sponsor-list-section" id="sponsor-list">
+      <div class="container" style="max-width: 1080px; margin:0 auto;">
+        
+        <!-- ページヘッダー -->
+        <div class="partners-page-header">
+          <div class="partners-title-block">
+            <span class="partners-title-en">PARTNERS</span>
+            <span class="partners-title-ja">スポンサー・パートナー一覧</span>
+          </div>
+        </div>
+        <hr class="partners-header-line">
+
+        <!-- ===== プラチナスポンサー ===== -->
+        <div class="tier-section tier-platinum">
+          <div class="tier-heading">Platinum Sponsor</div>
+          <hr class="tier-line">
+          <div class="logo-grid">
+            <div class="partner-logo-box">
+              <span class="dummy-logo-large">AWAKE Sports Foundation</span>
+            </div>
+            <div class="partner-logo-box">
+              <span class="dummy-logo-large">沖縄ジュニア育成サポーター基金</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== ゴールドスポンサー ===== -->
+        <div class="tier-section tier-gold">
+          <div class="tier-heading">Gold Sponsor</div>
+          <hr class="tier-line">
+          <div class="logo-grid">
+            <div class="partner-logo-box">
+              <span class="dummy-logo-medium">株式会社 琉球アスリートサポート</span>
+            </div>
+            <div class="partner-logo-box">
+              <span class="dummy-logo-medium">合同会社 サッカーフューチャー沖縄</span>
+            </div>
+            <div class="partner-logo-box">
+              <span class="dummy-logo-medium">沖縄スプリントテクノロジー</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== シルバースポンサー ===== -->
+        <div class="tier-section tier-silver">
+          <div class="tier-heading">Silver Sponsor</div>
+          <hr class="tier-line">
+          <div class="logo-grid">
+            <div class="silver-name-box">沖縄ジュニアサッカー応援団</div>
+            <div class="silver-name-box">TKGスポーツ整体院</div>
+            <div class="silver-name-box">琉球スプリントアカデミーOB会</div>
+            <div class="silver-name-box">一般社団法人沖縄こどもDX推進協議会</div>
+          </div>
+        </div>
+
+        <!-- CTA inside partners -->
+        <div class="partners-cta" style="margin-top: 48px; padding: 36px 32px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center; background: #fafafa;">
+          <h3 style="font-size:18px; font-weight:800; color:#222; margin-bottom:8px;">協賛・スポンサーを募集しています</h3>
+          <p style="font-size:13px; color:#666; line-height:1.8; margin-bottom:20px;">子どもたちのスプリント力向上と成長サポートの環境維持に、ぜひご協力ください。<br>プラン詳細や支援形態については、お気軽にご相談ください。</p>
+          <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="#sponsor">協賛プランを見る</a>
+            <a class="btn btn-outline" href="#contact">お問い合わせ</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2大ターゲットへの出口（CV）分岐 (White background) -->
+    <section class="section cta-split-section" id="cta-split">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Next Step</span>
+          <h2 class="section-title">2つの挑戦ルート</h2>
+          <p class="section-desc">AWAKEは、個人の能力を極限まで高めたい選手・保護者様と、チーム全体をDX化し底上げしたい指導者様の両方を強力にバックアップします。</p>
+        </div>
+
+        <div class="grid grid-2-col gap-medium cta-split-grid">
+          <!-- Route 1: Individual / Parents -->
+          <div class="cta-target-card parent-card">
+            <div class="cta-card-content">
+              <div class="target-icon">
+                <i data-lucide="user"></i>
+              </div>
+              <span class="target-badge">個人・保護者向け</span>
+              <h3>無料計測会で見つけた課題を、<br>プロの個別指導で最速克服する。</h3>
+              <p>月1回の計測会で現在のタイムや弱点は把握できますが、走りそのものを本質的に改善するには、正しい身体操作の反復トレーニングが必要です。AWAKEの完全個別パーソナルトレーニングで、ライバルに圧倒的な差をつける「一歩目の速さ」を手に入れませんか？</p>
+              <div class="cta-benefit-bullets">
+                <span><i data-lucide="check"></i> 選手専用に完全カスタマイズされたスプリント指導</span>
+                <span><i data-lucide="check"></i> LINEを通じた24時間動画添削・自主トレ宿題サポート</span>
+                <span><i data-lucide="check"></i> 医療視点に基づく怪我をしないステップワークの習得</span>
+              </div>
+              <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">個別パーソナル体験レッスンはこちら</a>
+            </div>
+          </div>
+
+          <!-- Route 2: Team Coach / Director -->
+          <div class="cta-target-card coach-card">
+            <div class="cta-card-content">
+              <div class="target-icon">
+                <i data-lucide="users"></i>
+              </div>
+              <span class="target-badge">チーム指導者・監督向け</span>
+              <h3>この科学的データ管理ツールを、<br>チームの育成・DX化に導入する。</h3>
+              <p>チーム所属の全選手のスプリントデータ、F-Vプロファイル、成長予測をクラウド上で一元化。指導者様の直感に頼った起用やフィジカルトレーニングから、データを活用した根拠ある育成へ。チームの強みを最大化し、怪我のリスクを最小化するためのサブスクシステムです。</p>
+              <div class="cta-benefit-bullets">
+                <span><i data-lucide="check"></i> 全選手のスプリントデータ・成長予測をクラウド一括管理</span>
+                <span><i data-lucide="check"></i> 選手ごとの30-15 IFTに基づく自動HIITメニュー配信</span>
+                <span><i data-lucide="check"></i> 沖縄全域 of チーム間スプリントベンチマーク比較機能</span>
+              </div>
+              <a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">チームサブスクの導入相談・デモ体験はこちら</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ: Application / Inquiry Form Section (koki41.com風お問い合わせフォーム) -->
+    <section class="section contact" id="contact">
+      <div class="container max-width-md">
+        <div class="section-header text-center">
+          <span class="section-badge">Contact Us</span>
+          <h2 class="section-title">お問い合わせ</h2>
+          <p class="section-desc">無料計測会へのお申し込み、個人体験レッスンのご相談、チーム導入やスポンサー協賛など、お気軽にお問い合わせください。</p>
+        </div>
+
+        <div class="contact-form">
+          <form id="contact-form" class="contact-form-inner">
+            <div class="form-group">
+              <label for="contact-name">お名前 <span class="required">必須</span></label>
+              <input type="text" id="contact-name" name="name" placeholder="山田 太郎" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">メールアドレス <span class="required">必須</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-category">お問い合わせ種別</label>
+              <select id="contact-category" name="category">
+                <option value="">選択してください</option>
+                <option value="measurement">無料スプリント計測会について</option>
+                <option value="personal">個人パーソナル体験レッスンについて</option>
+                <option value="team">チームサブスク導入・DX化について</option>
+                <option value="sponsor">スポンサー・協賛について</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">メッセージ内容 <span class="required">必須</span></label>
+              <textarea id="contact-message" name="message" placeholder="ご質問や参加希望日程、チーム情報などをご記入ください" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <span class="btn-text">送信する</span>
+              <span class="btn-loader hidden">送信中...</span>
+            </button>
+          </form>
+          <p class="contact-note">※ 通常2〜3営業日以内にご返信いたします。</p>
+
+          <!-- Success Dialogue (Initially hidden) -->
+          <div class="form-success hidden" id="form-success">
+            <i data-lucide="check-circle" class="success-icon"></i>
+            <h3>送信完了いたしました</h3>
+            <p>お問い合わせいただきありがとうございます。<br>ご入力いただいたメールアドレス宛に、追って担当者よりご連絡を差し上げます。</p>
+            <button type="button" class="btn btn-outline" id="form-reset-btn">戻る</button>
+          </div>
+
+          <div class="social-contact" style="text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border-color);">
+            <p style="font-size: 15px; color: var(--text-light); margin-bottom: 16px;">LINEやInstagram DMからもお気軽にお申し込み・お問い合わせいただけます。</p>
+            <div class="sns-container" style="margin-top: 20px;">
+              <a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer" class="sns-link line">
+                <i data-lucide="message-square"></i>
+                <span class="text">LINE公式アカウント</span>
+              </a>
+              <a href="https://www.instagram.com/sprint_academy_awake_okinawa/" target="_blank" rel="noopener noreferrer" class="sns-link instagram">
+                <i data-lucide="instagram"></i>
+                <span class="text">Instagram DM</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-main">AWAKE</span>
+        <span class="logo-sub">Sprint Academy</span>
+        <p class="footer-desc">科学の力で、眠っている才能を呼び覚ます。<br>沖縄唯一のサッカー専門ジュニアスプリントアカデミー。</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html#about">コンセプト</a></li>
+          <li><a href="index.html#features">指導理念</a></li>
+          <li><a href="index.html#trainer">トレーナー</a></li>
+          <li><a href="index.html#programs">料金プラン</a></li>
+          <li><a href="platform.html">無料計測会＆アプリ</a></li>
+          <li><a href="blog.html">公式ブログ</a></li>
+          <li><a href="https://note.com/awake_okinawa" target="_blank" rel="noopener noreferrer">note公式</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Sprint Academy AWAKE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

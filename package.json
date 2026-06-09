@@ -1,0 +1,14 @@
+{
+  "name": "awake-okinawa-hp",
+  "version": "1.0.0",
+  "description": "Sprint Academy AWAKE HP - 沖縄のサッカー専門ジュニアパーソナルトレーニング",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"index.html, style.css, script.js\"",
+    "build": "node scripts/generate-blog-index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}
