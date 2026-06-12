@@ -19,11 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
       smoothTouch: false,
     });
 
-    function raf(time) {
-      lenis.raf(time);
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
       requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
   }
 
   // --- GSAP & ScrollTrigger Animations ---
@@ -115,18 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: 'power3.out'
     });
 
-    // Pillars (Cards) stagger reveal
-    gsap.from('.pillar-card', {
-      scrollTrigger: {
-        trigger: '.pillars',
-        start: 'top 70%'
-      },
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 1.0,
-      ease: 'power3.out'
-    });
+    // Pillars (Cards) reveal animation disabled to ensure instant visibility on page load
 
     // Trainer Section reveal
     gsap.from('.trainer-visual', {
@@ -151,31 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: 'power3.out'
     });
 
-    // Benefits Cards stagger reveal
-    gsap.from('.benefits .pricing-card', {
-      scrollTrigger: {
-        trigger: '.benefits',
-        start: 'top 75%'
-      },
-      opacity: 0,
-      y: 50,
-      stagger: 0.15,
-      duration: 1.0,
-      ease: 'power3.out'
-    });
-
-    // Pricing Cards stagger reveal
-    gsap.from('.programs .pricing-card', {
-      scrollTrigger: {
-        trigger: '.programs',
-        start: 'top 75%'
-      },
-      opacity: 0,
-      y: 50,
-      stagger: 0.15,
-      duration: 1.0,
-      ease: 'power3.out'
-    });
+    // Benefits and Pricing cards reveal animation disabled to ensure instant visibility on page load
 
     // FAQ Items reveal
     gsap.from('.faq-item', {
@@ -245,20 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Platform: Feature Cards stagger reveal
-    if (document.querySelector('.feature-grid')) {
-      gsap.from('.feature-card', {
-        scrollTrigger: {
-          trigger: '.feature-grid',
-          start: 'top 75%'
-        },
-        opacity: 0,
-        y: 50,
-        stagger: 0.15,
-        duration: 1.0,
-        ease: 'power3.out'
-      });
-    }
+    // Platform: Feature Cards reveal animation disabled to ensure instant visibility on page load
 
     // Platform: Calendar container reveal
     if (document.querySelector('.google-cal-wrapper')) {
