@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+const initAWAKE = () => {
 
   // --- Initialize Lucide Icons ---
   const initIcons = () => {
@@ -303,4 +303,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(refreshLayout, 500);
   setTimeout(refreshLayout, 1500);
 
-});
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAWAKE);
+} else {
+  initAWAKE();
+}
