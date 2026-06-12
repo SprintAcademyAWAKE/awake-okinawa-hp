@@ -3,7 +3,7 @@ title: "子どもの「身長と運動能力」が劇的に伸びる時期とは
 date: "2026-06-08"
 category: "お役立ち情報"
 description: "一生の中で最も身長が伸び、運動能力が劇的に伸びる「成長の黄金期＝PHV（ピーク成長速度）期」。この時期を事前に予測し、ケガを防ぎながら効率的に能力を伸ばす方法を解説します。"
-thumbnail: "assets/children-smiling-run.png"
+thumbnail: "assets/phv-growth-chart.png"
 ---
 
 # 子どもの「身長と運動能力」が劇的に伸びる時期とは？PHV（ピーク成長速度）予測の重要性

@@ -5,7 +5,7 @@
     "date": "2026-06-12",
     "category": "お役立ち情報",
     "description": "「親の足が遅いから子どもも…」と諦めていませんか？走るスピードを決める要因と、遺伝の真実、そして科学的なアプローチで誰でも足が速くなる理由をわかりやすく解説します。",
-    "thumbnail": "assets/children-smiling-run.png"
+    "thumbnail": "assets/speed-junior-sprint.png"
   },
   {
     "id": "speed-training-hips",
@@ -13,7 +13,7 @@
     "date": "2026-06-09",
     "category": "トレーニング",
     "description": "ジュニアサッカーにおいて、相手ディフェンダーを置き去りにする「一歩目の加速力」を高めるには股関節の使い方が重要です。最新科学に基づく3つのアプローチを解説します。",
-    "thumbnail": "assets/trainer-analysis.png"
+    "thumbnail": "assets/hip-drive-start.png"
   },
   {
     "id": "phv-growth-spurt",
@@ -21,6 +21,6 @@
     "date": "2026-06-08",
     "category": "お役立ち情報",
     "description": "一生の中で最も身長が伸び、運動能力が劇的に伸びる「成長の黄金期＝PHV（ピーク成長速度）期」。この時期を事前に予測し、ケガを防ぎながら効率的に能力を伸ばす方法を解説します。",
-    "thumbnail": "assets/children-smiling-run.png"
+    "thumbnail": "assets/phv-growth-chart.png"
   }
 ]

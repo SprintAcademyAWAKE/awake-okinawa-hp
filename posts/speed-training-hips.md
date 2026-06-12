@@ -3,7 +3,7 @@ title: "サッカーの「一歩目の速さ」を決める！股関節スプリ
 date: "2026-06-09"
 category: "トレーニング"
 description: "ジュニアサッカーにおいて、相手ディフェンダーを置き去りにする「一歩目の加速力」を高めるには股関節の使い方が重要です。最新科学に基づく3つのアプローチを解説します。"
-thumbnail: "assets/trainer-analysis.png"
+thumbnail: "assets/hip-drive-start.png"
 ---
 
 # サッカーの「一歩目の速さ」を決める！股関節スプリントトレーニングの極意
