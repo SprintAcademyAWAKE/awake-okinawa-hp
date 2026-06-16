@@ -3,11 +3,11 @@
    ========================================================================== */
 :root {
     /* Color Palette */
-    --primary: #0B3C9B;         /* Royal Sports Blue (Main Accent) */
-    --primary-light: #2A68E6;
-    --primary-dark: #061B4D;
-    --accent: #FF5A09;          /* Volt Orange (Sub Accent / Highlight) */
-    --accent-light: #FF874D;
+    --primary: #111111;         /* Charcoal (Main Brand Color) */
+    --primary-light: #2A2A2A;
+    --primary-dark: #000000;
+    --accent: #C4A164;          /* Matte Gold (Brand Accent) */
+    --accent-light: #E6D0A7;
     
     /* Monotone System */
     --bg-light: #FFFFFF;
@@ -257,7 +257,7 @@ ul {
 }
 
 .logo-accent {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .logo-sub-text {
@@ -834,9 +834,9 @@ ul {
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, var(--accent) 0%, var(--primary) 100%);
-    top: 50%;
+    top: 8px;
     left: 0;
-    transform: rotate(-30deg);
+    transform: rotate(21.8deg);
     transform-origin: left top;
 }
 
