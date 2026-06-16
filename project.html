@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Awake Okinawa | 沖縄のジュニアスプリント・子ども成長支援プロジェクト</title>
+    <meta name="description" content="生まれた環境に関わらず、すべての子どもが走る喜びを知り、可能性を広げられる社会へ。沖縄で活動する無料スプリント計測会と、科学的アプローチでチームを支援するスプリントプラットフォーム「Sprint Analyzer」。">
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="Awake Okinawa | 沖縄のジュニアスプリント・子ども成長支援プロジェクト">
+    <meta property="og:description" content="生まれた環境に関わらず、すべての子どもが可能性を広げられる社会へ。無料スプリント計測会と、データで指導をDX化する「Sprint Analyzer」。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sprint-analyzer.okinawa/">
+    <meta property="og:image" content="assets/hero.png">
+    <meta property="og:site_name" content="Awake Okinawa">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Awake Okinawa | 子どもスプリント成長支援プロジェクト">
+    <meta name="twitter:description" content="やりたい！と思った瞬間に、誰もが自分の可能性に挑戦できる場所を。沖縄唯一 of ボランティア主催・無料スプリント計測プロジェクト。">
+    <meta name="twitter:image" content="assets/hero.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="project-style.css?v=1.0.3">
+
+    <!-- Smooth Scroll (Lenis) & GSAP Animations -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Script -->
+    <script src="project-script.js?v=1.0.3" defer></script>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">Awake</span> Okinawa
+                <span class="logo-sub-text">子どもスプリント成長支援</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">ホーム</a></li>
+                    <li><a href="#mission" class="nav-link">活動理念</a></li>
+                    <li><a href="#advantage" class="nav-link">私たちの価値</a></li>
+                    <li><a href="#features" class="nav-link">計測・分析機能</a></li>
+                    <li><a href="#pricing" class="nav-link">参加・支援方法</a></li>
+                    <li><a href="#contact" class="nav-link-btn">無料計測会に申し込む</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">ホーム</a></li>
+            <li><a href="#mission" class="mobile-nav-link">活動理念</a></li>
+            <li><a href="#advantage" class="mobile-nav-link">私たちの価値</a></li>
+            <li><a href="#features" class="mobile-nav-link">計測・分析機能</a></li>
+            <li><a href="#pricing" class="mobile-nav-link">参加・支援方法</a></li>
+            <li><a href="#contact" class="mobile-nav-btn">無料計測会に申し込む</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section (白背景・グリッドレイアウト) -->
+        <section class="hero" id="hero">
+            <div class="container grid-2 hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-icon"></span>
+                        <span>KIDS GROW SPRINT PROJECT</span>
+                    </div>
+                    <h1 class="hero-title">
+                        やりたい！と<br>
+                        思った瞬間に<br>
+                        <span class="text-gradient">挑戦できる場所を。</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        生まれた環境や家庭の経済状況に関わらず、すべての沖縄の子どもたちがスポーツを楽しみ、可能性を広げられる社会へ。<br>
+                        Awake Okinawaが主催する、子ども成長支援・無料スプリント計測プロジェクト。
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>無料スプリント計測会に登録する</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#pricing" class="btn btn-secondary-outline">
+                            <span>活動を支援する（チームサブスク）</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Quick Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" id="stat-kids">0</span><span class="stat-unit">+名</span>
+                            <p class="stat-label">無料計測に参加した子どもたち</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="stat-teams">0</span><span class="stat-unit">団体</span>
+                            <p class="stat-label">活動を支えるパートナーチーム数</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="stat-accuracy">0</span><span class="stat-unit">%</span>
+                            <p class="stat-label">光電管によるタイム測定精度</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/hero.png" alt="沖縄の空と陸上トラックで笑顔で走る子どもたち" class="hero-img">
+                        <div class="hero-grid-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 【理念】経済格差をなくすための月1回無料計測会ストーリー -->
+        <section class="mission section-padding" id="mission">
+            <div class="container grid-2">
+                <div class="mission-text fade-in-left">
+                    <div class="section-tag">MISSION</div>
+                    <h2 class="section-title">すべての子どもに、<br>同じスタートラインを。</h2>
+                    <p class="section-lead">
+                        プロ水準のスプリント計測や科学的な分析を、経済的な理由で諦めてほしくない。
+                    </p>
+                    <p class="section-desc">
+                        高精度の光電管計測や、走りの弱点を分析するF-Vプロファイルなどは、本来なら高額な機材費と専門知識が必要な「一部の恵まれた環境」だけの特権でした。私たちは、生まれた環境や経済状況のせいで、子どもたちが自分の「走る才能」や「可能性」に気付けない現状を変えたいと考えています。<br><br>
+                        「走る」というすべてのスポーツの原点において、誰もが等しく同じスタートラインに立ち、挑戦できること。個人ボランティア・地域コミュニティの協力のもと、費用一切不要で参加できる「無料スプリント計測会」を毎月定期的に開催しています。
+                    </p>
+                    <div class="mission-points">
+                        <div class="point-item">
+                            <i data-lucide="heart" class="point-icon"></i>
+                            <div>
+                                <h4>完全無料のオープン開催</h4>
+                                <p>毎月開催される合同計測会は、参加費・機材測定費・分析シートの提供まですべて0円です。個人・チーム問わず誰でも参加できます。</p>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <i data-lucide="zap" class="point-icon"></i>
+                            <div>
+                                <h4>科学的アプローチを全員に</h4>
+                                <p>無料であっても測定の質は一切落としません。プロ選手と同等の赤外線光電管レーザーと、成長期を科学する高度なデータ分析を提供します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-visual fade-in-right">
+                    <div class="image-wrapper">
+                        <img src="assets/free_session.png" alt="無料計測会で笑顔を見せる子どもたちとコーチ" class="mission-img">
+                        <div class="img-badge">
+                            <span class="img-badge-num">¥0</span>
+                            <span class="img-badge-text">子どもたちの挑戦はいつでも無料</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 【優位性】沖縄県内唯一のスプリントデータプラットフォームとしての価値 -->
+        <section class="advantage section-padding alt-bg" id="advantage">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">OKINAWA NO.1</div>
+                    <h2 class="section-title">沖縄の子どもたちのために、私たちができること</h2>
+                    <p class="section-lead">専門の計測環境がほぼゼロの沖縄で、草の根から指導のDX化を広げる</p>
+                </div>
+                <div class="grid-3">
+                    <div class="advantage-card fade-in">
+                        <div class="adv-icon-wrapper">
+                            <i data-lucide="heart-handshake" class="adv-icon"></i>
+                        </div>
+                        <h3>地域唯一の草の根スプリント支援</h3>
+                        <p>沖縄県内には、専門的にジュニア向けスプリント計測を行える業者がほぼいません。私たちは、ボランティアベースの軽快なフットワークでグラウンドへと出向き、科学的指導のインフラを無償で届ける唯一の存在です。</p>
+                    </div>
+                    <div class="advantage-card fade-in">
+                        <div class="adv-icon-wrapper">
+                            <i data-lucide="database" class="adv-icon"></i>
+                        </div>
+                        <h3>成長の軌跡をてのひらに（DX化）</h3>
+                        <p>タイムを測るだけで終わりにせず、蓄積されたデータをクラウドで管理。選手本人、指導者、保護者がいつでもスマートフォンから成長を確認できるシステム「Sprint Analyzer」を提供し、チームの指導DXをサポートします。</p>
+                    </div>
+                    <div class="advantage-card fade-in">
+                        <div class="adv-icon-wrapper">
+                            <i data-lucide="shield-check" class="adv-icon"></i>
+                        </div>
+                        <h3>怪我を防ぎ、可能性を最大化する</h3>
+                        <p>感や経験だけに頼るのではなく、成長期の骨の発育ステージの推定や、左右アジリティの非対称性の可視化などを通じて、無理な練習による怪我のリスクを未然に防ぎ、子どもたちの安全な成長を守ります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アプリ機能・測定メリット紹介 -->
+        <section class="features section-padding" id="features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">SCIENCE FOR KIDS</div>
+                    <h2 class="section-title">子どもたちの「速さ」を科学する<br>スプリントデータ管理プラットフォーム</h2>
+                    <p class="section-lead">運動生理学とスポーツバイオメカニクスを、すべてのジュニアチームへ。</p>
+                </div>
+                
+                <div class="features-wrapper">
+                    <!-- Feature 1 -->
+                    <div class="feature-item fade-in">
+                        <div class="feature-info">
+                            <span class="feature-num">01</span>
+                            <h3>高精度光電管スプリント計測 <span class="feature-badge">10m・30m</span></h3>
+                            <p class="feature-desc">
+                                ストップウォッチによる手動計測には、どうしても測定者の反応速度による誤差（最大0.2秒以上）が生じます。Sprint Analyzerは、プロ仕様の赤外線光電管レーザーセンサーと完全連動。スタートから10m・30m通過時のタイムをミリ秒単位で正確に自動記録し、成長の軌跡を1ミリ秒の狂いもなく可視化します。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i data-lucide="check" class="li-icon"></i>1/1000秒（ミリ秒）単位の超高精度レーザー計測</li>
+                                <li><i data-lucide="check" class="li-icon"></i>手動測定の誤差を完全に排除した真の実力評価</li>
+                                <li><i data-lucide="check" class="li-icon"></i>過去データとの自動比較による正確な成長推移の可視化</li>
+                            </ul>
+                        </div>
+                        <div class="feature-image">
+                            <div class="image-box">
+                                <img src="assets/dashboard.png" alt="Sprint Analyzer タイム計測画面" class="feature-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-item reverse fade-in">
+                        <div class="feature-info">
+                            <span class="feature-num">02</span>
+                            <h3>F-Vプロファイル分析 <span class="feature-badge-sec">走りのタイプ診断</span></h3>
+                            <p class="feature-desc">
+                                走る速度は「力（Force）」と「速度（Velocity）」の掛け合わせ。選手がスタートダッシュの「力」に優れているのか、それとも中盤以降の「最大速度」に優れているのかを、運動方程式から理論最大力（F0）と理論最大速度（V0）として算出。選手の弱点を自動判定し、最適トレーニングを自動処方します。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i data-lucide="check" class="li-icon"></i>スタートの押し出し能力（F0）の数値化</li>
+                                <li><i data-lucide="check" class="li-icon"></i>トップスピード能力（V0）の数値化</li>
+                                <li><i data-lucide="check" class="li-icon"></i>「パワー型」「スピード型」の自動分類と最適メニュー提示</li>
+                            </ul>
+                        </div>
+                        <div class="feature-image">
+                            <div class="image-box">
+                                <div class="graph-placeholder">
+                                    <div class="graph-title">F-V Profile Analysis</div>
+                                    <div class="graph-canvas">
+                                        <div class="graph-line"></div>
+                                        <div class="graph-dot current"></div>
+                                        <div class="graph-dot ideal"></div>
+                                    </div>
+                                    <div class="graph-legend">
+                                        <span><span class="dot blue"></span>現在値</span>
+                                        <span><span class="dot orange"></span>理想値</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-item fade-in">
+                        <div class="feature-info">
+                            <span class="feature-num">03</span>
+                            <h3>プロアジリティ <span class="feature-badge">非対称性・怪我リスク可視化</span></h3>
+                            <p class="feature-desc">
+                                左右への切り返し（5m-10m-5m）を測定し、右ターンと左ターンのタイム差から、筋肉や動きの「非対称性（左右の癖）」を可視化します。これにより、将来の怪我リスクを事前に察知し、パフォーマンス向上と同時に安全なスポーツライフをサポートします。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i data-lucide="check" class="li-icon"></i>左右ターンタイムのミリ秒比較</li>
+                                <li><i data-lucide="check" class="li-icon"></i>非対称性インデックス（Asymmetry Index）の自動算出</li>
+                                <li><i data-lucide="check" class="li-icon"></i>怪我防止のための補強・ストレッチメニュー処方</li>
+                            </ul>
+                        </div>
+                        <div class="feature-image">
+                            <div class="image-box">
+                                <div class="asymmetry-box">
+                                    <div class="asymmetry-title">左右非対称性分析</div>
+                                    <div class="asymmetry-meter">
+                                        <span class="label">L</span>
+                                        <div class="meter-bar">
+                                            <div class="meter-fill left" style="width: 78%"></div>
+                                            <div class="meter-center"></div>
+                                            <div class="meter-fill right" style="width: 45%"></div>
+                                        </div>
+                                        <span class="label">R</span>
+                                    </div>
+                                    <div class="asymmetry-status warning">
+                                        <i data-lucide="alert-triangle"></i>
+                                        <span>左方向へのターンに弱点（非対称性: 12% - 怪我注意レベル）</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-item reverse fade-in">
+                        <div class="feature-info">
+                            <span class="feature-num">04</span>
+                            <h3>30-15 IFT 有酸素評価 <span class="feature-badge-sec">HIIT処方機能</span></h3>
+                            <p class="feature-desc">
+                                近代フットボールやバスケットボールなどで必須とされる「30-15 IFT（間欠的往復ランテスト）」に対応。アプリ内蔵の専用有酸素タイマーが音でペースをガイドし、選手のスタミナを数値化（VIFT）。方向転換時の減速ペナルティを自動計算した、チーム個別・選手個別の「8週間高強度インターバルトレーニング（HIIT）メニュー」を処方します。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i data-lucide="check" class="li-icon"></i>音響ガイドによる正確な30-15 IFT計測</li>
+                                <li><i data-lucide="check" class="li-icon"></i>方向転換（COD）の減速負荷を自動補正</li>
+                                <li><i data-lucide="check" class="li-icon"></i>測定データ直結の8週間HIITスケジュール自動生成</li>
+                            </ul>
+                        </div>
+                        <div class="feature-image">
+                            <div class="image-box">
+                                <div class="hiit-box">
+                                    <div class="hiit-header">
+                                        <span class="hiit-title">8-Week HIIT Program</span>
+                                        <span class="hiit-week">Week 3/8</span>
+                                    </div>
+                                    <div class="hiit-schedule">
+                                        <div class="day active">月<span>HIIT</span></div>
+                                        <div class="day">火<span>-</span></div>
+                                        <div class="day active">水<span>HIIT</span></div>
+                                        <div class="day">木<span>-</span></div>
+                                        <div class="day active">金<span>HIIT</span></div>
+                                        <div class="day">土<span>試合</span></div>
+                                    </div>
+                                    <p class="hiit-detail">強度: 95% VIFT | 15秒オン / 15秒オフ × 10本</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-item fade-in">
+                        <div class="feature-info">
+                            <span class="feature-num">05</span>
+                            <h3>PHV発育・将来身長予測 <span class="feature-badge">安全な成長指導</span></h3>
+                            <p class="feature-desc">
+                                子供たちの「骨の成長期ステージ」を推定し、現在が最も骨が伸びる時期（PHV: Peak Height Velocity）なのかどうかを判定。両親の身長データと現在の身長・座高から、将来の成人身長を予測します。これにより、過度な負荷をかける練習を避け、怪我を防ぎながら長期的な育成プランを組み立てることができます。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i data-lucide="check" class="li-icon"></i>現在の骨の発育年齢（PHV年齢）の推定</li>
+                                <li><i data-lucide="check" class="li-icon"></i>両親の遺伝子データを加味した成人身長予測</li>
+                                <li><i data-lucide="check" class="li-icon"></i>オーバートレーニングを防ぐ負荷自動警告</li>
+                            </ul>
+                        </div>
+                        <div class="feature-image">
+                            <div class="image-box">
+                                <div class="phv-box">
+                                    <div class="phv-title">PHV成長ステージ推定</div>
+                                    <div class="phv-timeline">
+                                        <div class="stage completed"><span>プレPHV</span></div>
+                                        <div class="stage current"><span>PHV（成長スパート）</span></div>
+                                        <div class="stage future"><span>ポストPHV</span></div>
+                                    </div>
+                                    <div class="phv-prediction">
+                                        <span class="label">将来の予測身長:</span>
+                                        <span class="value">178.5 cm <span class="range">(±3.5cm)</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 料金プラン & 導入ステップ -->
+        <section class="pricing section-padding alt-bg" id="pricing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">JOIN & SUPPORT</div>
+                    <h2 class="section-title">参加・支援方法</h2>
+                    <p class="section-lead">子どもたちの「やりたい！」を無料計測で応援し、チームのDX指導を共に支える</p>
+                </div>
+
+                <!-- Plans Grid -->
+                <div class="grid-2 pricing-wrapper">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>合同無料計測会</h3>
+                            <p class="price">¥0 <span>/ 子ども・保護者・チーム</span></p>
+                            <p class="pricing-desc">生まれた環境に関わらず、すべての沖縄の子どもたちに走りの測定と成長分析の機会を届けるための、完全無料プログラム。</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check" class="check-icon"></i>月1回開催のAwake Okinawa計測会へ何回でも無料参加</li>
+                            <li><i data-lucide="check" class="check-icon"></i>光電管を用いた正確な10m・30m測定</li>
+                            <li><i data-lucide="check" class="check-icon"></i>測定結果の簡易分析シート配布</li>
+                            <li><i data-lucide="check" class="check-icon"></i>PHV成長期推定（簡易版）の提供</li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#contact" class="btn btn-secondary-outline btn-full">無料計測会に登録する</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 2 -->
+                    <div class="pricing-card popular fade-in">
+                        <div class="popular-badge">推奨</div>
+                        <div class="pricing-header">
+                            <h3>チームサブスク ＆ パートナー共創プラン</h3>
+                            <p class="price">¥9,800〜 <span>/ 月（税込）</span></p>
+                            <p class="pricing-desc">自チームの指導を完全にDX化すると同時に、売上の一部がAwake Okinawaの無料スプリント測定会の継続的な活動資金に充てられます。</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check" class="check-icon"></i>所属選手全員のスプリントデータ一元管理（クラウド）</li>
+                            <li><i data-lucide="check" class="check-icon"></i>F-Vプロファイル＆弱点診断・練習メニュー自動処方</li>
+                            <li><i data-lucide="check" class="check-icon"></i>左右アジリティ非対称性・怪我リスク判定</li>
+                            <li><i data-lucide="check" class="check-icon"></i>30-15 IFTに基づく8週間HIITメニュー自動処方</li>
+                            <li><i data-lucide="check" class="check-icon"></i>将来身長予測＆PHV発育期安全指導アラート</li>
+                            <li><i data-lucide="check" class="check-icon"></i>売上の一部を沖縄の「子ども無料計測会」の運営費へ寄付</li>
+                            <li><i data-lucide="check" class="check-icon"></i>HPおよび活動レポートでの「協賛パートナー」名誉掲載</li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#contact" class="btn btn-primary btn-full">協賛 ＆ チーム導入の相談をする</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Steps Grid -->
+                <div class="steps-section">
+                    <h3 class="steps-title">チームサブスク導入＆支援の3ステップ</h3>
+                    <div class="grid-3 steps-wrapper">
+                        <div class="step-card fade-in">
+                            <span class="step-num">01</span>
+                            <h4>お問い合わせ・相談</h4>
+                            <p>LINEまたはお問い合わせフォームより、お気軽にご連絡ください。チームの現在の測定方法や課題、支援の仕組みについてご説明します。</p>
+                        </div>
+                        <div class="step-card fade-in">
+                            <span class="step-num">02</span>
+                            <h4>無料の出張デモ測定</h4>
+                            <p>専門スタッフがチームの練習場所へ直接お伺いし、実際の機材を使ってデモ測定会を実施。使い心地とデータ指導の効果を体験していただきます。</p>
+                        </div>
+                        <div class="step-card fade-in">
+                            <span class="step-num">03</span>
+                            <h4>契約 ＆ パートナーシップ開始</h4>
+                            <p>チームアカウントを作成し、所属選手のデータ管理を開始。指導のDX化がスタートするとともに、協賛パートナーとして無料計測会の運営を支えていただけます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- コンタクト & SNSリンク -->
+        <section class="contact section-padding" id="contact">
+            <div class="container grid-2">
+                <div class="contact-info fade-in-left">
+                    <div class="section-tag">CONTACT US</div>
+                    <h2 class="section-title">子どもたちの挑戦を、<br>一緒に支えていきませんか？</h2>
+                    <p class="section-lead">
+                        無料計測会への参加申込や体験、チームサブスク（協賛）へのご相談、ボランティア活動についてのご質問など、お気軽にお問い合わせください。
+                    </p>
+                    
+                    <div class="sns-links">
+                        <a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer" class="sns-btn line">
+                            <i data-lucide="message-circle" class="sns-icon"></i>
+                            <div>
+                                <span class="sns-label">公式LINEでお問い合わせ・申込</span>
+                                <span class="sns-link-text">lin.ee/1F3Tqka</span>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/sprint_academy_awake_okinawa" target="_blank" rel="noopener noreferrer" class="sns-btn instagram">
+                            <i data-lucide="instagram" class="sns-icon"></i>
+                            <div>
+                                <span class="sns-label">公式Instagram（活動の様子を発信中）</span>
+                                <span class="sns-link-text">@sprint_academy_awake_okinawa</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- お問い合わせフォーム -->
+                <div class="contact-form-wrapper fade-in-right">
+                    <form action="#" class="contact-form" id="lp-contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前（またはチーム・団体名）<span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" required placeholder="例: 豊見城JAC / 山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@sprint.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-type">お問い合わせ内容 <span class="required">必須</span></label>
+                            <select id="contact-type" name="contact-type" required>
+                                <option value="" disabled selected>選択してください</option>
+                                <option value="free-session">合同無料計測会への参加申込</option>
+                                <option value="team-trial">チームサブスク・協賛についてのご相談</option>
+                                <option value="question">活動内容へのご質問・その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ・ご要望</label>
+                            <textarea id="message" name="message" rows="5" placeholder="ご質問や、無料計測会への参加希望日などをご記入ください。"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>送信する</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (白背景・シンプルボーダー) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-accent">Awake</span> Okinawa
+                </a>
+                <p class="footer-desc">
+                    子どもスプリント成長支援プロジェクト Awake Okinawa。<br>科学的分析と無料スプリント計測を通じて、子どもたちの可能性を未来へつなぎます。
+                </p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>ナビゲーション</h4>
+                    <ul>
+                        <li><a href="#mission">活動理念</a></li>
+                        <li><a href="#advantage">私たちの価値</a></li>
+                        <li><a href="#features">分析機能</a></li>
+                        <li><a href="#pricing">参加・支援プラン</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>公式SNS</h4>
+                    <ul>
+                        <li><a href="https://lin.ee/1F3Tqka" target="_blank" rel="noopener noreferrer">LINE公式アカウント</a></li>
+                        <li><a href="https://instagram.com/sprint_academy_awake_okinawa" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Awake Okinawa / Sprint Analyzer. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
