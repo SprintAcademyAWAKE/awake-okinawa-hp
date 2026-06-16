@@ -86,6 +86,10 @@ body {
   max-width: 800px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .section {
   padding: 120px 0;
   position: relative;

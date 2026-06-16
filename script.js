@@ -245,34 +245,61 @@ const initAWAKE = () => {
       if (btnText) btnText.classList.add('hidden');
       if (btnLoader) btnLoader.classList.remove('hidden');
 
-      // Simulate Server Request (1.5 seconds)
-      setTimeout(() => {
-        // Hide form and loader
-        contactForm.classList.add('hidden');
+      // Collect form data
+      const formData = {
+        name: document.getElementById('contact-name').value,
+        email: document.getElementById('contact-email').value,
+        category: document.getElementById('contact-category').value,
+        message: document.getElementById('contact-message').value,
+        _subject: '【AWAKE公式HP】新しいお問い合わせが届きました'
+      };
+
+      // Send actual email via FormSubmit AJAX endpoint
+      fetch('https://formsubmit.co/ajax/sprintacademyawake@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        // Reset button states
         submitBtn.disabled = false;
         if (btnText) btnText.classList.remove('hidden');
         if (btnLoader) btnLoader.classList.add('hidden');
 
-        // Show success dialogue
-        if (formSuccess) {
-          formSuccess.classList.remove('hidden');
+        if (response.ok) {
+          // Hide form and show success dialogue
+          contactForm.classList.add('hidden');
+          if (formSuccess) {
+            formSuccess.classList.remove('hidden');
 
-          // Scroll to Success Box
-          const offset = header ? header.offsetHeight : 0;
-          if (lenis) {
-            lenis.scrollTo(formSuccess, {
-              offset: -offset - 30,
-              duration: 1
-            });
-          } else {
-            const pos = formSuccess.getBoundingClientRect().top + window.pageYOffset - offset - 30;
-            window.scrollTo({
-              top: pos,
-              behavior: 'smooth'
-            });
+            // Scroll to Success Box
+            const offset = header ? header.offsetHeight : 0;
+            if (lenis) {
+              lenis.scrollTo(formSuccess, {
+                offset: -offset - 30,
+                duration: 1
+              });
+            } else {
+              const pos = formSuccess.getBoundingClientRect().top + window.pageYOffset - offset - 30;
+              window.scrollTo({
+                top: pos,
+                behavior: 'smooth'
+              });
+            }
           }
+        } else {
+          alert('送信中にエラーが発生しました。お手数ですが、公式LINEまたはInstagramより直接お問い合わせください。');
         }
-      }, 1500);
+      })
+      .catch(error => {
+        submitBtn.disabled = false;
+        if (btnText) btnText.classList.remove('hidden');
+        if (btnLoader) btnLoader.classList.add('hidden');
+        alert('通信エラーが発生しました。インターネット接続状況をご確認いただくか、公式LINEよりお問い合わせください。');
+      });
     });
   }
 
