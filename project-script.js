@@ -363,13 +363,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     alert('送信完了いたしました。お問い合わせいただきありがとうございます。');
                     contactForm.reset();
                 } else {
-                    alert('送信中にエラーが発生しました。お手数ですが、公式LINEまたはInstagramより直接お問い合わせください。');
+                    alert('送信中にエラーが発生しました。お手数ですが、sprintacademyawake@gmail.comまでメールにて直接お問い合わせください。');
                 }
             })
             .catch(error => {
                 if (submitBtn) submitBtn.disabled = false;
                 if (btnSpan) btnSpan.textContent = originalText;
-                alert('通信エラーが発生しました。インターネット接続状況をご確認いただくか、公式LINEよりお問い合わせください。');
+                alert('通信エラーが発生しました。インターネット接続状況をご確認いただくか、sprintacademyawake@gmail.comまでメールにて直接お問い合わせください。');
             });
         });
     }
