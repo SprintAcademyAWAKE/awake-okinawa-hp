@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="project-style.css?v=1.0.4">
+    <link rel="stylesheet" href="project-style.css?v=1.0.5">
 
     <!-- Smooth Scroll (Lenis) & GSAP Animations -->
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
@@ -39,7 +39,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- Custom Script -->
-    <script src="project-script.js?v=1.0.4" defer></script>
+    <script src="project-script.js?v=1.0.5" defer></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -231,8 +231,15 @@
                             <li><i data-lucide="check" class="check-icon"></i>PHV成長期推定（簡易版）の提供</li>
                             <li><i data-lucide="instagram" class="check-icon" style="color: #C4A164;"></i>参加条件：公式Instagramのフォロワーであること</li>
                         </ul>
-                        <div class="pricing-cta">
+                        <div class="pricing-cta" style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
                             <a href="#contact" class="btn btn-primary btn-full">AWAKE無料計測会に登録する</a>
+                            <a href="https://instagram.com/sprint_academy_awake_okinawa" target="_blank" rel="noopener noreferrer" class="sns-btn instagram" style="justify-content: center; text-align: left; margin-top: 4px;">
+                                <i data-lucide="instagram" class="sns-icon"></i>
+                                <div>
+                                    <span class="sns-label" style="font-weight: 500; font-size: 0.8rem;">公式Instagram（参加条件：フォロー必須）</span>
+                                    <span class="sns-link-text" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700;">@sprint_academy_awake_okinawa</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -268,10 +275,14 @@
                     <div class="section-tag">CONTACT US</div>
                     <h2 class="section-title">子どもたちの挑戦を、<br>一緒に支えていきませんか？</h2>
                     <p class="section-lead">
-                        AWAKE無料計測会への参加申込（体験）、ボランティア活動についてのご質問など、お気軽にお問い合わせください。参加ご希望の方は、下記のフォームよりお申し込みをお願いいたします。
+                        AWAKE無料計測会への参加申込（体験）や、本活動に賛同していただくスポンサー・パートナー協賛についてのご質問など、お気軽にお問い合わせください。参加ご希望の方は、下記のフォームよりお申し込みをお願いいたします。
                     </p>
                     
-                    <div class="sns-links">
+                    <div class="sns-links" style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="sponsor-guide.html" class="btn btn-secondary-outline btn-full" style="justify-content: center; gap: 10px; padding: 16px 24px; display: inline-flex; align-items: center; border-radius: 4px; font-weight: 700; text-decoration: none;">
+                            <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
+                            <span>協賛プランご案内資料を見る（スポンサー募集）</span>
+                        </a>
                         <a href="https://instagram.com/sprint_academy_awake_okinawa" target="_blank" rel="noopener noreferrer" class="sns-btn instagram">
                             <i data-lucide="instagram" class="sns-icon"></i>
                             <div>
