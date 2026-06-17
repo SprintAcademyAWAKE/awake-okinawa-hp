@@ -339,10 +339,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (submitBtn) submitBtn.disabled = true;
             if (btnSpan) btnSpan.textContent = '送信中...';
             
+            const categoryEl = document.getElementById('contact-type');
+            const categoryVal = categoryEl && categoryEl.selectedIndex >= 0 ? categoryEl.options[categoryEl.selectedIndex].text : '';
+
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
-                category: document.getElementById('contact-type').value,
+                category: categoryVal,
                 message: document.getElementById('message').value,
                 _subject: '【Awake Okinawa】LPより新しいお問い合わせが届きました'
             };

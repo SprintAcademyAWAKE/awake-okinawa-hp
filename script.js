@@ -246,10 +246,13 @@ const initAWAKE = () => {
       if (btnLoader) btnLoader.classList.remove('hidden');
 
       // Collect form data
+      const categoryEl = document.getElementById('contact-category');
+      const categoryVal = categoryEl && categoryEl.selectedIndex >= 0 ? categoryEl.options[categoryEl.selectedIndex].text : '';
+
       const formData = {
         name: document.getElementById('contact-name').value,
         email: document.getElementById('contact-email').value,
-        category: document.getElementById('contact-category').value,
+        category: categoryVal,
         message: document.getElementById('contact-message').value,
         _subject: '【AWAKE公式HP】新しいお問い合わせが届きました'
       };
