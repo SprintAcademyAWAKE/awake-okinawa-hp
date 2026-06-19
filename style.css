@@ -123,7 +123,10 @@ body {
 .items-center { align-items: center; }
 .text-center { text-align: center; }
 .text-white { color: var(--white) !important; }
-.inline-block { display: inline-block; }
+.inline-block {
+  display: inline-block;
+  white-space: nowrap;
+}
 
 /* --- Typography --- */
 h1, h2, h3, h4, h5, h6 {
@@ -1172,6 +1175,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .about-text {
     padding-right: 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about .section-title {
+    font-size: 1.5rem;
   }
 
   .hero {
