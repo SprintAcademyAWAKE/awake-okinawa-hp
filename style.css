@@ -2477,6 +2477,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
+  .grid-3-col {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .flow-container {
     flex-direction: column;
     gap: 30px;

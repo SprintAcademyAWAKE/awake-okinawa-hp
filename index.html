@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
   <title>Sprint Academy AWAKE | 沖縄のジュニアサッカー専門スプリントトレーニング（本島全域対面・オンライン対応）</title>
   <meta name="description" content="沖縄のジュニアサッカー選手向けスプリント専門スクール。本島全域での対面指導（那覇・豊見城・糸満周辺以外は交通費別途）に加え、遠方の方にも推奨されるオンラインでの走り方個別指導を実施。ZONE公認トレーナーによる医学的アプローチ。">
   
@@ -71,7 +72,7 @@
     }
   }
   </script>
-  <link rel="stylesheet" href="style.css?v=1.0.4">
+  <link rel="stylesheet" href="style.css?v=1.0.6">
   <script src="script.js?v=1.0.4" defer></script>
 </head>
 <body>
@@ -376,6 +377,14 @@
           <h2 class="section-title">プラン・料金のご案内</h2>
           <p class="section-desc">一人ひとりの目的や目標期間に合わせて選べる、明確で安心な料金プランです。</p>
         </div>
+
+        <!-- Admission Fee Notice -->
+        <div style="max-width: 900px; margin: 0 auto 30px auto; background: rgba(196, 161, 100, 0.05); border: 1px dashed var(--accent); border-radius: 8px; padding: 12px 20px; text-align: center;">
+          <p style="font-family: var(--font-heading); font-size: 0.95rem; color: var(--primary); font-weight: 700; margin: 0;">
+            入会金：¥30,000 <span style="color: var(--accent); margin-left: 10px;">★体験トレーニング終了後に当日入会された場合は【無料】</span>
+          </p>
+        </div>
+
         <div class="grid grid-3-col gap-medium pricing-grid">
           <!-- Plan 1 -->
           <div class="pricing-card">
@@ -386,6 +395,7 @@
               <span class="plan-badge">Trial Session</span>
               <h3 class="plan-title">体験トレーニング</h3>
               <p class="plan-price">¥5,000<span class="plan-unit"> / 60分</span></p>
+              <p class="plan-price-note" style="color: var(--accent); font-size: 0.85rem; font-weight: 700; margin: 4px 0 12px 0;">※体験当日入会で体験料（5,000円）が無料！</p>
               <p class="plan-description">現状の走り方の課題を映像で分析し、その場でスピードの変化を実感していただくための初回レッスン。</p>
               <ul class="plan-features">
                 <li><i data-lucide="check"></i> 簡易スプリントフォーム動画分析</li>
@@ -437,8 +447,53 @@
           </div>
         </div>
 
+        <!-- Online Plans Header -->
+        <h3 class="pricing-subtitle" style="font-family: var(--font-heading); font-size: 1.5rem; text-align: center; margin: 60px 0 24px 0; font-weight: 700; color: var(--primary); letter-spacing: 0.05em;">
+          オンライン個別指導プラン（全国対応・遠方の方推奨）
+        </h3>
+        
+        <div class="grid grid-2-col gap-medium pricing-grid" style="max-width: 900px; margin: 0 auto 40px auto;">
+          <!-- Online Plan 1 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="pricing-icon-wrapper">
+                <i data-lucide="video" class="pricing-icon"></i>
+              </div>
+              <span class="plan-badge">Online Standard</span>
+              <h3 class="plan-title">オンラインプラン（月1回）</h3>
+              <p class="plan-price">¥5,000<span class="plan-unit"> / 月</span></p>
+              <p class="plan-description">遠方からでもプロの分析と指導を受けられる、チケット制と同じサポートが付いた月1回プラン。</p>
+              <ul class="plan-features">
+                <li><i data-lucide="check"></i> 月1回の動画フォーム精密分析＆解説</li>
+                <li><i data-lucide="check"></i> チケット制と同じサポート（個別宿題・24hLINEサポート）</li>
+                <li style="color: var(--accent); font-weight: 600;"><i data-lucide="sparkles" style="color: var(--accent); width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> 月1回限定：+¥3,000で直接対面指導も可能</li>
+              </ul>
+              <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">体験・入会を申し込む</a>
+            </div>
+          </div>
+
+          <!-- Online Plan 2 -->
+          <div class="pricing-card">
+            <div class="card-inner">
+              <div class="pricing-icon-wrapper">
+                <i data-lucide="video" class="pricing-icon"></i>
+              </div>
+              <span class="plan-badge badge-accent">Highly Recommended</span>
+              <h3 class="plan-title">オンラインプラン（月2回）</h3>
+              <p class="plan-price">¥7,000<span class="plan-unit"> / 月</span></p>
+              <p class="plan-description">定期的なフォーム修正とメニュー調整により、走りの改善スピードを加速させる月2回プラン。</p>
+              <ul class="plan-features">
+                <li><i data-lucide="check"></i> 月2回の動画フォーム精密分析＆解説</li>
+                <li><i data-lucide="check"></i> チケット制と同じサポート（個別宿題・24hLINEサポート）</li>
+                <li style="color: var(--accent); font-weight: 600;"><i data-lucide="sparkles" style="color: var(--accent); width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> 月1回限定：+¥3,000で直接対面指導も可能</li>
+              </ul>
+              <a href="https://forms.gle/wptbfEDgjvM9xXrM6?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">体験・入会を申し込む</a>
+            </div>
+          </div>
+        </div>
+
         <div style="margin-top: 40px; text-align: center;">
-          <p style="font-size: 0.85rem; color: var(--text-light);">※ 入会金は通常 ¥30,000 です。</p>
+          <p style="font-size: 0.85rem; color: var(--text-light);">※ 入会金：¥30,000（ただし、体験トレーニング終了後に当日入会いただいた場合は無料）</p>
           <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">※ チケットプラン終了後、ご希望の方向けに月額制プラン（月1〜4回）のご案内も行っております。</p>
           <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">※ 対面レッスンは沖縄本島全域に対応いたします。ただし那覇市・豊見城市・糸満市（南部・島尻地区）以外の地域は別途出張交通費（実費目安）を頂戴いたします。遠方のお客さまには、時間効率に優れ、同様の劇的な走力向上を狙える<strong>オンラインレッスンプログラム</strong>を強く推奨しております。</p>
         </div>
