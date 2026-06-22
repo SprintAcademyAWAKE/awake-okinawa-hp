@@ -7,8 +7,8 @@
     "dev": "npx browser-sync start --server --files \"index.html, style.css, script.js\"",
     "build": "node scripts/generate-blog-index.js"
   },
-  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^3.0.3"
+    "browser-sync": "^3.0.3",
+    "vercel": "^54.14.5"
   }
 }
